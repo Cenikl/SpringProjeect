@@ -25,5 +25,4 @@ public interface StudentRepository extends JpaRepository<students,String> {
     @Query(value="delete * from students where id_student = ?1",nativeQuery = true)
     void deleteStudentById(long idStudent);
 
-
 }
