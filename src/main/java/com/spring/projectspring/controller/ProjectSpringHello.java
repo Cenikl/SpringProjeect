@@ -25,8 +25,7 @@ public class ProjectSpringHello {
     }
 
     @PostMapping(value = "/image",
-            produces = MediaType.IMAGE_PNG_VALUE
-    )
+            produces = MediaType.IMAGE_PNG_VALUE)
     public byte[] image (@RequestBody(required = true) byte[] photo) {
 
        try {
